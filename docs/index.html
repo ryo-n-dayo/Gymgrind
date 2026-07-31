@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gymgrind</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f2f2f7;
+    --text: #1c1c1e;
+    --secondary: #6e6e73;
+    --accent: #ff6b35;
+    --border: rgba(60, 60, 67, 0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --text: #f2f2f7;
+      --secondary: #98989f;
+      --accent: #ff8a5c;
+      --border: rgba(255, 255, 255, 0.12);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", Roboto, sans-serif;
+  }
+  main {
+    max-width: 420px;
+    padding: 32px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: var(--accent);
+  }
+  p {
+    color: var(--secondary);
+    font-size: 15px;
+    margin: 0 0 28px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  a {
+    display: block;
+    padding: 14px 18px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gymgrind</h1>
+  <p>ワークアウト記録アプリ / A workout logging app</p>
+  <nav>
+    <a href="privacy.html">プライバシーポリシー / Privacy Policy</a>
+    <a href="support.html">サポート / Support</a>
+  </nav>
+</main>
+</body>
+</html>
