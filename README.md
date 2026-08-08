@@ -11,6 +11,7 @@
 
 ## リンク
 
+- [App Storeで見る](https://apps.apple.com/jp/app/gymgrind/id6790394636?l=en-US)
 - [プライバシーポリシー](https://404-ryo.github.io/Gymgrind/privacy.html)
 - [サポート](https://404-ryo.github.io/Gymgrind/support.html)
 
@@ -29,5 +30,6 @@ This repository contains only the app's informational pages (Privacy Policy, Sup
 
 ## Links
 
+- [Download on the App Store](https://apps.apple.com/jp/app/gymgrind/id6790394636?l=en-US)
 - [Privacy Policy](https://404-ryo.github.io/Gymgrind/privacy.html)
 - [Support](https://404-ryo.github.io/Gymgrind/support.html)
