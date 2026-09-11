@@ -1,79 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gymgrind</title>
-<style>
-  :root {
-    color-scheme: light dark;
-    --bg: #f2f2f7;
-    --text: #1c1c1e;
-    --secondary: #6e6e73;
-    --accent: #ff6b35;
-    --border: rgba(60, 60, 67, 0.12);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #000000;
-      --text: #f2f2f7;
-      --secondary: #98989f;
-      --accent: #ff8a5c;
-      --border: rgba(255, 255, 255, 0.12);
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", Roboto, sans-serif;
-  }
-  main {
-    max-width: 420px;
-    padding: 32px;
-    text-align: center;
-  }
-  h1 {
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0 0 8px;
-    color: var(--accent);
-  }
-  p {
-    color: var(--secondary);
-    font-size: 15px;
-    margin: 0 0 28px;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  a {
-    display: block;
-    padding: 14px 18px;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    color: var(--text);
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gymgrind — iPhoneで使える、シンプルなワークアウト記録アプリ。">
+  <title>Gymgrind — ワークアウト記録アプリ</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main>
-  <h1>Gymgrind</h1>
-  <p>ワークアウト記録アプリ / A workout logging app</p>
-  <nav>
-    <a href="privacy.html">プライバシーポリシー / Privacy Policy</a>
-    <a href="support.html">サポート / Support</a>
-  </nav>
-</main>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">G</span>Gymgrind</a>
+    <nav class="site-nav" aria-label="サイトメニュー"><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+  </header>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Workout logging for iPhone</p>
+        <h1>トレーニングを、迷わず記録する。</h1>
+        <p class="lead">Gymgrindは、重量・回数・休憩をすばやく記録できるiPhone向けトレーニングアプリです。記録はすべて端末内に保存されます。</p>
+        <a class="button" href="https://apps.apple.com/jp/app/gymgrind/id6790394636?l=en-US" target="_blank" rel="noreferrer">App Storeで入手 <span aria-hidden="true">↗</span></a>
+        <p class="note">iPhone対応 · アカウント登録不要 · 広告・解析なし</p>
+      </div>
+      <div class="phone" aria-label="Gymgrindの記録画面をイメージしたデザイン">
+        <div class="phone-screen">
+          <span class="phone-label">TODAY</span>
+          <div class="phone-title">Gymgrind</div>
+          <div class="workout-card"><strong>Bench Press</strong><span>60 kg × 8 reps · 3 sets</span><div class="progress"><i></i></div></div>
+          <div class="workout-card"><strong>Lat Pulldown</strong><span>45 kg × 10 reps · 3 sets</span><div class="progress"><i style="width: 58%"></i></div></div>
+          <div class="workout-card"><strong>Rest timer</strong><span>01:30 remaining</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="features" aria-label="Gymgrindの特徴">
+      <article class="feature"><div class="feature-icon">01</div><h2>すばやく記録</h2><p>種目・重量・回数・休憩を、トレーニングの流れを止めずに残せます。</p></article>
+      <article class="feature"><div class="feature-icon">02</div><h2>変化が見える</h2><p>履歴カレンダーと成長グラフで、日々の積み重ねを振り返れます。</p></article>
+      <article class="feature"><div class="feature-icon">03</div><h2>プライバシーを守る</h2><p>アカウント不要。記録は端末の中だけに保存され、広告や解析ツールも使いません。</p></article>
+    </section>
+  </main>
+  <footer class="site-footer">© 2026 Gymgrind · <a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a></footer>
 </body>
 </html>
