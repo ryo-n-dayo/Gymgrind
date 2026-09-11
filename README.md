@@ -7,13 +7,14 @@
 - 広告・解析ツールなし
 - AI分析はApple Intelligence（オンデバイス）のみを使用
 
-このリポジトリはアプリの説明用ページ（プライバシーポリシー・サポート）のみを含みます。ソースコードは含まれません。
+このリポジトリには、アプリの紹介・プライバシーポリシー・サポートページを表示するNext.jsサイトが含まれます。iOSアプリ本体のソースコードは含まれません。
 
 ## リンク
 
 - [App Storeで見る](https://apps.apple.com/jp/app/gymgrind/id6790394636?l=en-US)
-- [プライバシーポリシー](docs/privacy.html)
-- [サポート](docs/support.html)
+- [公式サイト（Vercel）](https://gymgrind.vercel.app/)
+- [プライバシーポリシー](https://gymgrind.vercel.app/privacy)
+- [サポート](https://gymgrind.vercel.app/support)
 
 ---
 
@@ -26,14 +27,15 @@ Gymgrind is an iPhone-only workout logging app for tracking exercises, weight, a
 - No ads or analytics
 - AI analysis uses Apple Intelligence (on-device) only
 
-This repository contains only the app's informational pages (Privacy Policy, Support). It does not include source code.
+This repository includes the Next.js marketing, privacy policy, and support site. It does not include the iOS app source code.
 
 ## Links
 
 - [Download on the App Store](https://apps.apple.com/jp/app/gymgrind/id6790394636?l=en-US)
-- [Privacy Policy](docs/privacy.html)
-- [Support](docs/support.html)
+- [Website (Vercel)](https://gymgrind.vercel.app/)
+- [Privacy Policy](https://gymgrind.vercel.app/privacy)
+- [Support](https://gymgrind.vercel.app/support)
 
 ## Hosting
 
-The public pages live in `docs/`. `vercel.json` configures Vercel to deploy that directory, including the privacy policy and support pages.
+Vercel automatically deploys the Next.js app from `main`. The legacy `docs/` directory remains available for GitHub Pages compatibility.
