@@ -5,6 +5,7 @@ export type Locale = (typeof locales)[number]
 export const defaultLocale: Locale = 'ja'
 
 export const siteUrl = 'https://gymgrind.vercel.app'
+export const appStoreId = '6790394636'
 
 export const hasLocale = (value: string): value is Locale => (locales as readonly string[]).includes(value)
 
@@ -15,6 +16,7 @@ export function pageMetadata(locale: Locale, path: string, title: string, descri
   return {
     title,
     description,
+    openGraph: { title, description, url: localePath(locale, path), siteName: 'Gymgrind', locale: locale === 'ja' ? 'ja_JP' : 'en_US', type: 'website' },
     alternates: {
       canonical: localePath(locale, path),
       languages: { ja: localePath('ja', path), en: localePath('en', path), 'x-default': localePath(defaultLocale, path) },

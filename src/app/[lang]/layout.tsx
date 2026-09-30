@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import '../globals.css'
 import { content } from '@/content'
-import { hasLocale, locales, siteUrl } from '@/i18n'
+import { appStoreId, hasLocale, locales, siteUrl } from '@/i18n'
 
 export const dynamicParams = false
 
@@ -13,7 +13,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: LayoutProps<'/[lang]'>): Promise<Metadata> {
   const { lang } = await params
   if (!hasLocale(lang)) return {}
-  return { metadataBase: new URL(siteUrl), title: content[lang].home.title, description: content[lang].home.description }
+  return { metadataBase: new URL(siteUrl), title: content[lang].home.title, description: content[lang].home.description, itunes: { appId: appStoreId } }
 }
 
 export default async function RootLayout({ children, params }: LayoutProps<'/[lang]'>) {
