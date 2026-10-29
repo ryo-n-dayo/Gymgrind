@@ -69,12 +69,12 @@ export const content: Record<Locale, Content> = {
       title: 'プライバシーポリシー — Gymgrind',
       description: 'Gymgrindのプライバシーポリシー。記録は端末の中だけに保存されます。',
       heading: 'プライバシーポリシー',
-      updated: '最終更新: 2026年10月6日',
+      updated: '最終更新: 2026年10月29日',
       intro: 'Gymgrindは、あなたのトレーニング記録をこの端末の中だけに保存します。開発者を含む誰かのサーバーに送信することは一切ありません。アカウント登録も不要で、広告や解析ツールも使用していません。',
       sections: [
         {
           heading: '保存する情報',
-          body: '・ワークアウトの記録（種目・重量・回数・日時・セットを終えた時刻と休憩の長さ・メモ）\n・テンプレート、目標、お気に入り\n・メニューと食事のめやすを作るための回答（目的・経験・頻度・1回の時間・重点部位。答えた場合のみ、年齢・性別・体重・身長・普段の活動量・気になる部位）\n・アプリの設定（言語、休憩タイマー、表示設定）\n\nこれらはすべて端末内のデータベースおよび設定領域に保存されます。アプリをiPhoneから削除すると、これらのデータも削除されます。',
+          body: '・ワークアウトの記録（種目・重量・回数・有酸素の時間・日時・セットを終えた時刻・メモ）\n・テンプレート、目標、お気に入り\n・メニューと食事のめやすを作るための回答（目的・経験・頻度・1回の時間・重点部位。答えた場合のみ、年齢・性別・体重・身長・普段の活動量・気になる部位）\n・アプリの設定（言語、休憩タイマー、表示設定）\n\nこれらはすべて端末内のデータベースおよび設定領域に保存されます。アプリをiPhoneから削除すると、これらのデータも削除されます。',
         },
         {
           heading: 'ヘルスケア（HealthKit）',
@@ -147,12 +147,12 @@ export const content: Record<Locale, Content> = {
       title: 'Privacy Policy — Gymgrind',
       description: 'The Gymgrind privacy policy. Your records stay on your device.',
       heading: 'Privacy Policy',
-      updated: 'Last updated: October 6, 2026',
+      updated: 'Last updated: October 29, 2026',
       intro: "Gymgrind stores your training records only on this device. Nothing is ever sent to the developer's servers or anyone else's. No account is required, and the app contains no ads or analytics.",
       sections: [
         {
           heading: 'Information we store',
-          body: '• Workout records (exercise, weight, reps, date/time, when each set ended and how long you rested, notes)\n• Templates, goals, and favorites\n• Your answers for building your plan and nutrition guide (goal, experience, frequency, session length, priority muscles; and only if you answer them, age, sex, body weight, height, daily activity, and areas that need care)\n• App settings (language, rest timer, display options)\n\nAll of this is stored in on-device storage. Deleting the app from your iPhone deletes this data as well.',
+          body: '• Workout records (exercise, weight, reps, cardio time, date/time, when each set ended, notes)\n• Templates, goals, and favorites\n• Your answers for building your plan and nutrition guide (goal, experience, frequency, session length, priority muscles; and only if you answer them, age, sex, body weight, height, daily activity, and areas that need care)\n• App settings (language, rest timer, display options)\n\nAll of this is stored in on-device storage. Deleting the app from your iPhone deletes this data as well.',
         },
         {
           heading: 'Apple Health (HealthKit)',
